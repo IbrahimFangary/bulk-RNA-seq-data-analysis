@@ -12,13 +12,13 @@
 library(DESeq2)
 library(vsn)
 ## Loading the data
-ge_matrix <- read.table('E:/bioinformatics files/BULK RNA seq data/NCOMMS-19-7936188_bulk_RNAseq_raw_counts.txt', 
+ge_matrix <- read.table('./bulk_RNAseq_raw_counts.txt', 
                         header = TRUE, sep = '\t')
 dim(ge_matrix)
 ge_matrix[1:4, 1:4]
 
 ## Loading the meta-data
-pheno_matrix <- read.table("E:/bioinformatics files/BULK RNA seq data/NCOMMS-19-7936188_bulk_RNAseq_metadata.txt", 
+pheno_matrix <- read.table("./bulk_RNAseq_metadata.txt", 
                            header = TRUE, sep = '\t', stringsAsFactors = TRUE)
 pheno_matrix[1:6, 1:5]
 
